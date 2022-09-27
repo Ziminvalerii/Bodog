@@ -48,7 +48,7 @@ class GameViewController: BaseViewController<GamePresenterProtocol>,GameViewProt
                     view.ignoresSiblingOrder = true
                     
 //                    view.showsFPS = true
-//                    view.showsNodeCount = true
+//                    view.      = true
                 }
             }
         }
