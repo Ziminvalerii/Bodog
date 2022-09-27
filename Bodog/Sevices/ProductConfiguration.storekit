@@ -1,0 +1,123 @@
+{
+  "identifier" : "7C3587CC",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "0.45",
+      "familyShareable" : false,
+      "internalID" : "6451F68C",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "100 coins",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.hundred.coins",
+      "referenceName" : "100 coins",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "1.45",
+      "familyShareable" : false,
+      "internalID" : "967901A2",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "500 coins",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.fiveHundred.coins",
+      "referenceName" : "500 coins",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "3.99",
+      "familyShareable" : false,
+      "internalID" : "3E3BB195",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "2000 coins",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.twoThousand.coins",
+      "referenceName" : "2000 coins",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "7.95",
+      "familyShareable" : false,
+      "internalID" : "64949A0C",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "10000 coins",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.tenThousand.coins",
+      "referenceName" : "10000 coins",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "15.45",
+      "familyShareable" : false,
+      "internalID" : "B1DAD43E",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "25000 coins",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.twentyFiveThousand.coins",
+      "referenceName" : "25000 coins",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "20.45",
+      "familyShareable" : false,
+      "internalID" : "9FC95DFF",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "100000 coins",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.hundredThousand.coins",
+      "referenceName" : "100000 coins",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "0.99",
+      "familyShareable" : false,
+      "internalID" : "5B32C710",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.temporary.id.copy-5",
+      "referenceName" : null,
+      "type" : "Consumable"
+    }
+  ],
+  "settings" : {
+
+  },
+  "subscriptionGroups" : [
+
+  ],
+  "version" : {
+    "major" : 2,
+    "minor" : 0
+  }
+}

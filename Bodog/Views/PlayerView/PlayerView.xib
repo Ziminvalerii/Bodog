@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PlayerView" customModule="Bodog" customModuleProvider="target">
+            <connections>
+                <outlet property="playerImageView" destination="kcZ-An-6ax" id="geY-4a-b8k"/>
+                <outlet property="playerLabel" destination="1l2-Ky-QQY" id="2b2-La-D8o"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person0" translatesAutoresizingMaskIntoConstraints="NO" id="kcZ-An-6ax">
+                    <rect key="frame" x="0.0" y="7" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="36" id="KmQ-BO-AG6"/>
+                        <constraint firstAttribute="height" constant="36" id="WYd-mw-ZXv"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="1l2-Ky-QQY">
+                    <rect key="frame" x="44" y="25" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="1l2-Ky-QQY" secondAttribute="trailing" id="Epy-69-wN3"/>
+                <constraint firstItem="kcZ-An-6ax" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="K9d-Xg-pds"/>
+                <constraint firstItem="1l2-Ky-QQY" firstAttribute="leading" secondItem="kcZ-An-6ax" secondAttribute="trailing" constant="8" id="VXt-I0-jsy"/>
+                <constraint firstItem="1l2-Ky-QQY" firstAttribute="centerY" secondItem="kcZ-An-6ax" secondAttribute="centerY" id="Yq7-67-7WO"/>
+                <constraint firstItem="kcZ-An-6ax" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="icw-8k-pS8"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="41.517857142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="person0" width="223" height="244"/>
+    </resources>
+</document>

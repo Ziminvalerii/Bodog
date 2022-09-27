@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RateHeaderView" customModule="Bodog" customModuleProvider="target">
+            <connections>
+                <outlet property="headerView" destination="9Et-qG-v5X" id="FO2-PS-fV8"/>
+                <outlet property="scoreLabel" destination="sww-ak-3Bt" id="lL6-Ql-x4T"/>
+                <outlet property="wordsCountLabel" destination="Q8u-fk-aMr" id="CKq-f0-bqF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Et-qG-v5X">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="72"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Words: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Q8u-fk-aMr">
+                            <rect key="frame" x="16" y="8" width="72" height="24"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCORE:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="sww-ak-3Bt">
+                            <rect key="frame" x="16" y="40" width="90" height="29"/>
+                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="sww-ak-3Bt" secondAttribute="trailing" id="FyM-QX-QGA"/>
+                        <constraint firstItem="Q8u-fk-aMr" firstAttribute="top" secondItem="9Et-qG-v5X" secondAttribute="top" constant="8" id="GVr-3y-dfz"/>
+                        <constraint firstItem="Q8u-fk-aMr" firstAttribute="leading" secondItem="9Et-qG-v5X" secondAttribute="leading" constant="16" id="Oa5-Rb-I6L"/>
+                        <constraint firstItem="sww-ak-3Bt" firstAttribute="top" secondItem="Q8u-fk-aMr" secondAttribute="bottom" constant="8" id="W8w-ZZ-BHe"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Q8u-fk-aMr" secondAttribute="trailing" id="a3M-HU-eMs"/>
+                        <constraint firstItem="sww-ak-3Bt" firstAttribute="leading" secondItem="Q8u-fk-aMr" secondAttribute="leading" id="ewS-W1-Kaf"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="9Et-qG-v5X" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="90r-o1-eAa"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="9Et-qG-v5X" secondAttribute="bottom" constant="8" id="PZU-7d-0Ho"/>
+                <constraint firstItem="9Et-qG-v5X" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="SB0-JY-nES"/>
+                <constraint firstItem="9Et-qG-v5X" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="o8i-S7-9Av"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="41.517857142857139"/>
+        </view>
+    </objects>
+</document>

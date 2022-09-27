@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RewardAdsView" customModule="Bodog" customModuleProvider="target">
+            <connections>
+                <outlet property="crossButton" destination="MUd-EJ-Cc9" id="asG-Jg-vQ3"/>
+                <outlet property="gotItButton" destination="Inj-5B-gY2" id="F53-uO-Ibc"/>
+                <outlet property="titleLabel" destination="tKX-fs-dys" id="Ks8-2d-05A"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="330"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To start the game you need to watch an ad" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tKX-fs-dys">
+                    <rect key="frame" x="24" y="160" width="272" height="53.666666666666657"/>
+                    <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="24"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="advertising" translatesAutoresizingMaskIntoConstraints="NO" id="uqK-g9-QNX">
+                    <rect key="frame" x="0.0" y="16" width="320" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="128" id="ZjZ-1D-97u"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MUd-EJ-Cc9">
+                    <rect key="frame" x="268" y="24" width="36" height="36"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" backgroundImage="cross"/>
+                    <connections>
+                        <action selector="crossButtonTapped:" destination="-1" eventType="touchUpInside" id="RJF-Bh-gCB"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Inj-5B-gY2">
+                    <rect key="frame" x="102.66666666666669" y="266" width="115" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="3nI-gB-Jk4"/>
+                        <constraint firstAttribute="width" constant="115" id="zuS-xm-BPC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="GOT IT!" backgroundImage="whiteButton">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="gotItButtonTapped:" destination="-1" eventType="touchUpInside" id="83j-mg-WUc"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.14117647059999999" green="0.1960784314" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="MUd-EJ-Cc9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="24" id="0Pf-d8-5gP"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="MUd-EJ-Cc9" secondAttribute="trailing" constant="16" id="1gF-Ia-jDM"/>
+                <constraint firstItem="tKX-fs-dys" firstAttribute="top" secondItem="uqK-g9-QNX" secondAttribute="bottom" constant="16" id="2Cj-D0-OBn"/>
+                <constraint firstItem="uqK-g9-QNX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="4Wn-OF-lSP"/>
+                <constraint firstItem="tKX-fs-dys" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="HY8-Bk-P3Y"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="tKX-fs-dys" secondAttribute="trailing" constant="24" id="JWm-dO-HmL"/>
+                <constraint firstItem="uqK-g9-QNX" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="L4N-kD-b4e"/>
+                <constraint firstItem="Inj-5B-gY2" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="PDL-3w-3j7"/>
+                <constraint firstItem="uqK-g9-QNX" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="g2x-vl-fsq"/>
+                <constraint firstItem="Inj-5B-gY2" firstAttribute="top" relation="greaterThanOrEqual" secondItem="tKX-fs-dys" secondAttribute="bottom" constant="4" id="jJO-m4-Qz8"/>
+                <constraint firstItem="tKX-fs-dys" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="24" id="k1g-FM-X1f"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Inj-5B-gY2" secondAttribute="bottom" constant="20" id="xEU-zp-Uts"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="64.615384615384613" y="20.616113744075829"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="advertising" width="512" height="512"/>
+        <image name="cross" width="36" height="36"/>
+        <image name="whiteButton" width="332" height="135"/>
+    </resources>
+</document>

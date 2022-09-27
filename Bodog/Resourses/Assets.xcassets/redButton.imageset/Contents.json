@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "red-and-green-glass-buttons-shiny-rectangle-3d-vector-23705949 1.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "red-and-green-glass-buttons-shiny-rectangle-3d-vector-23705949 1@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "red-and-green-glass-buttons-shiny-rectangle-3d-vector-23705949 1@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

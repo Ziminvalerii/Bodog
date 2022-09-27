@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "4B1ACE72-B19C-4D62-A10B-FF09CB0F7FC5"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4FA8F8CD-DF10-44D1-904F-6B8579D7F0BB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Bodog/ViewControllers/Game Screen/View/GameViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "312F07C2-FC9B-4E36-87A8-3FC1B0EE73B3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Bodog/ViewControllers/Game Screen/View/GameViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EDC4E8CF-8A63-4D6F-AF14-337DA6BB3B52"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Bodog/ViewControllers/Game Screen/Presenter/GamePresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "showAds(at:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "EDC4E8CF-8A63-4D6F-AF14-337DA6BB3B52 - db179e1c4adf95c8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Bodog.GamePresenter.showAds(at: __C.UIViewController) -&gt; ()"
+                  moduleName = "Bodog"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anastasiakoldunova/Developer/Bodog/Bodog/ViewControllers/Game%20Screen/Presenter/GamePresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "250">
+               </Location>
+               <Location
+                  uuid = "EDC4E8CF-8A63-4D6F-AF14-337DA6BB3B52 - 97410e797de98579"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in Bodog.GamePresenter.showAds(at: __C.UIViewController) -&gt; ()"
+                  moduleName = "Bodog"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anastasiakoldunova/Developer/Bodog/Bodog/ViewControllers/Game%20Screen/Presenter/GamePresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "89"
+                  endingLineNumber = "89"
+                  offsetFromSymbolStart = "45">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
