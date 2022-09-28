@@ -30,7 +30,7 @@ class ScoreTableView: UITableView,UITableViewDelegate,UITableViewDataSource {
         self.contentInsetAdjustmentBehavior = .never
         
         self.tableHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: self.bounds.size.width, height: 0))
-        self.sectionHeaderTopPadding = 0        
+//        self.sectionHeaderTopPadding = 0        
 //        print("ddjdjd")
     }
     // MARK: - Table view data source
