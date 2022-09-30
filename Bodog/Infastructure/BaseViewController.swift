@@ -23,6 +23,14 @@ class BaseViewController<T> : UIViewController, ViewAnimationTransition {
         return vc
     }
     
+    
+    override var shouldAutorotate: Bool {
+        return true
+    }
+
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return .portrait
+    }
     //MARK: - View Transition
     
   

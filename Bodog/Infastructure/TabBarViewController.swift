@@ -18,6 +18,14 @@ class TabBarViewController: UITabBarController {
         configureTabBar()
     }
     
+    override var shouldAutorotate: Bool {
+        return true
+    }
+
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return .portrait
+    }
+    
     
     func setUpViewControllers() {
         setViewControllers(router?.setUpTabBarVC(), animated: true)
