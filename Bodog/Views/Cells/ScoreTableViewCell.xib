@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,16 +18,16 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HZR-ls-i2d">
-                        <rect key="frame" x="16" y="7" width="105.5" height="30"/>
+                        <rect key="frame" x="4" y="7" width="177" height="30"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fjfjfjfjfjfjjfjfjfj" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="vBG-Zn-7ko">
-                                <rect key="frame" x="8" y="0.0" width="89.5" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="8" y="0.0" width="161" height="30"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="30" id="Pfz-6b-HLF"/>
                             <constraint firstAttribute="trailing" secondItem="vBG-Zn-7ko" secondAttribute="trailing" constant="8" id="TZH-5A-ucq"/>
@@ -36,18 +37,18 @@
                         </constraints>
                     </stackView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfC-ku-4lb">
-                        <rect key="frame" x="262" y="12" width="42" height="20.5"/>
-                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <rect key="frame" x="274" y="13.5" width="42" height="17.5"/>
+                        <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="17"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="qfC-ku-4lb" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="HZR-ls-i2d" secondAttribute="trailing" constant="8" id="Ixz-jr-Fqs"/>
+                    <constraint firstItem="qfC-ku-4lb" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="HZR-ls-i2d" secondAttribute="trailing" constant="4" id="Ixz-jr-Fqs"/>
                     <constraint firstItem="HZR-ls-i2d" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="K26-oU-AsO"/>
-                    <constraint firstItem="HZR-ls-i2d" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Uri-HT-wYP"/>
+                    <constraint firstItem="HZR-ls-i2d" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="4" id="Uri-HT-wYP"/>
                     <constraint firstItem="qfC-ku-4lb" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="g6U-6k-h2m"/>
-                    <constraint firstAttribute="trailing" secondItem="qfC-ku-4lb" secondAttribute="trailing" constant="16" id="odh-Mi-Rhc"/>
+                    <constraint firstAttribute="trailing" secondItem="qfC-ku-4lb" secondAttribute="trailing" constant="4" id="odh-Mi-Rhc"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

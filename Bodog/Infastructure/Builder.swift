@@ -17,10 +17,17 @@ protocol BuilderProtocol {
     func createAvatarViewController(_ router: RouterProtocol, delegate: AvatarUpdate?) -> AvatarViewController
     func createShopViewController(_ router: RouterProtocol, shop: ShopCases) -> ShopViewController
     func createInstructionViewController(_ router: RouterProtocol) -> InstructionViewController
+    func createSettingsViewController(_ router: RouterProtocol) -> SettingsViewController
     }
 
 
 class Builder: BuilderProtocol {
+    func createSettingsViewController(_ router: RouterProtocol) -> SettingsViewController {
+        let vc = SettingsViewController.instantiateMyViewController()
+        vc.presenter = SettingsPresenter(view: vc, router: router)
+        return vc
+    }
+    
     func createInstructionViewController(_ router: RouterProtocol) -> InstructionViewController {
         let vc = InstructionViewController.instantiateMyViewController()
         vc.presenter = InstructionPresenter(view: vc, router: router)

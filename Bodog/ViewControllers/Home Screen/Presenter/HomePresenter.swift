@@ -25,6 +25,7 @@ protocol HomePresenterProtocol : AnyObject {
     func showAds(at vc: UIViewController)
     func training(from vc: UIViewController)
     func goToInstruction(from vc:UIViewController)
+    func goToSettingViewController(from vc: UIViewController)
 }
 
 
@@ -63,6 +64,10 @@ class HomePresenter : HomePresenterProtocol, AvatarUpdate {
         }
     
     //MARK: - Navigation
+    
+    func goToSettingViewController(from vc: UIViewController) {
+        router.presentSettingsVC(from: vc)
+    }
     func goToGameViewController(from vc: UIViewController) {
         router.goToGameViewController(from: vc, conectionManager: conectionManager, adsManager: adsManager, stake: nil, words: nil, isTraining: false/*, adsManager: adsManager, score: nil*/)
     }

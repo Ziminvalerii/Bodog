@@ -11,7 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RewardAdsView" customModule="Bodog" customModuleProvider="target">
             <connections>
                 <outlet property="crossButton" destination="MUd-EJ-Cc9" id="asG-Jg-vQ3"/>
-                <outlet property="gotItButton" destination="Inj-5B-gY2" id="F53-uO-Ibc"/>
+                <outlet property="gotItButton" destination="Inj-5B-gY2" id="4Rc-dt-Qx8"/>
                 <outlet property="titleLabel" destination="tKX-fs-dys" id="Ks8-2d-05A"/>
             </connections>
         </placeholder>
@@ -20,6 +20,10 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="330"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backgrnd" translatesAutoresizingMaskIntoConstraints="NO" id="Pt1-T3-QsM">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="330"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To start the game you need to watch an ad" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tKX-fs-dys">
                     <rect key="frame" x="24" y="160" width="272" height="53.666666666666657"/>
                     <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="24"/>
@@ -34,6 +38,7 @@
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MUd-EJ-Cc9">
                     <rect key="frame" x="268" y="24" width="36" height="36"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                     <state key="normal" backgroundImage="cross"/>
                     <connections>
@@ -46,7 +51,7 @@
                         <constraint firstAttribute="height" constant="44" id="3nI-gB-Jk4"/>
                         <constraint firstAttribute="width" constant="115" id="zuS-xm-BPC"/>
                     </constraints>
-                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
+                    <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="18"/>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                     <state key="normal" title="GOT IT!" backgroundImage="whiteButton">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -78,7 +83,8 @@
     </objects>
     <resources>
         <image name="advertising" width="512" height="512"/>
+        <image name="backgrnd" width="1125" height="2435"/>
         <image name="cross" width="36" height="36"/>
-        <image name="whiteButton" width="332" height="135"/>
+        <image name="whiteButton" width="283" height="131"/>
     </resources>
 </document>

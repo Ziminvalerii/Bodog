@@ -118,7 +118,7 @@ extension ShopPresenter: UICollectionViewDataSource, UICollectionViewDelegateFlo
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "buy_cell", for: indexPath) as! BuyCollectionViewCell
         cell.layer.cornerRadius = 5
-        cell.clipsToBounds = true
+        cell.clipsToBounds = false
         if shopCase == .coin {
             guard let products = products else { return UICollectionViewCell() }
             cell.configure(model: products[indexPath.row])

@@ -15,9 +15,13 @@ protocol InterstitialViewDelegate: AnyObject{
 class RewardAdsView: UIView {
     
     //MARK: - IBOutlets
+    @IBOutlet weak var gotItButton: UIButton! {
+        didSet {
+            gotItButton.setAttributedTitle(setAtributedTitle("GOT IT"), for: .normal)
+        }
+    }
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var crossButton: UIButton!
-    @IBOutlet weak var gotItButton: UIButton!
     //MARK: -Propeties
     weak var delegate: InterstitialViewDelegate?
     var contentView: UIView?
@@ -37,6 +41,20 @@ class RewardAdsView: UIView {
         view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         addSubview(view)
         contentView = view
+    }
+    
+    func setAtributedTitle(_ str: String) -> NSAttributedString {
+        let attributes: [NSAttributedString.Key: Any] = [
+            NSAttributedString.Key.strokeColor: UIColor(red: 0, green: 126/255, blue: 109/255, alpha: 1),
+            NSAttributedString.Key.foregroundColor: UIColor.white,
+            NSAttributedString.Key.strokeWidth: -4.0,
+            NSAttributedString.Key.font : UIFont(name: "Copperplate", size: 20)!
+        ]
+        let textWithStroke = NSAttributedString(
+            string: str,
+            attributes: attributes
+        );
+        return textWithStroke
     }
     
     func loadViewFromNib() -> UIView? {

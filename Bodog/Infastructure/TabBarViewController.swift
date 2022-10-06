@@ -52,8 +52,8 @@ class TabBarViewController: UITabBarController {
     private func setTabBarItemColors( _ itemAppearence: UITabBarItemAppearance) {
         itemAppearence.selected.titleTextAttributes = [.foregroundColor : UIColor.white]
         itemAppearence.selected.iconColor = UIColor.white
-        itemAppearence.normal.titleTextAttributes = [.foregroundColor : UIColor.black]
-        itemAppearence.normal.iconColor = UIColor.black
+        itemAppearence.normal.titleTextAttributes = [.foregroundColor : UIColor(red: 0, green: 126/255, blue: 109/255, alpha: 1)]
+        itemAppearence.normal.iconColor = UIColor(red: 0, green: 126/255, blue: 109/255, alpha: 1)
     }
     /*
     // MARK: - Navigation

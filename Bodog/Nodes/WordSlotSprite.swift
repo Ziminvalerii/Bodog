@@ -25,9 +25,9 @@ class WordSlotSprite: SKSpriteNode {
     private lazy var charLabel: SKLabelNode = {
         let label = SKLabelNode()
         label.fontSize = 40
-        label.fontName = "Helvetica Neue Bold"
-        label.fontColor = SKColor.black
-        label.position = CGPoint(x: 0, y: -15)
+        label.fontName = "Copperplate Bold"
+        label.fontColor = SKColor.white
+        label.position = CGPoint(x: 0, y: -12)
         return label
     }()
     private lazy var shadow: SKSpriteNode = {

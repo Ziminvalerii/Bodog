@@ -13,6 +13,7 @@ class CreateGameViewController: BaseViewController<CreateGamePresenterProtocol>,
     //MARK: - IBoulets
     @IBOutlet weak var startLabel: UILabel! {
         didSet {
+            startLabel.attributedText = setAtributedTitle("START")
             startLabel.layer.shadowColor = UIColor.black.cgColor
             startLabel.layer.shadowRadius = 1.0
             startLabel.layer.shadowOpacity = 1.0
@@ -40,6 +41,9 @@ class CreateGameViewController: BaseViewController<CreateGamePresenterProtocol>,
     @IBOutlet weak var codeTextField: UITextField!
     @IBOutlet weak var slider: UISlider! {
         didSet {
+            slider.layer.cornerRadius = 10
+            slider.clipsToBounds = true
+            slider.layer.masksToBounds = true
             slider.setMaximumTrackImage(UIImage(named: "sliderImage")!, for: .normal)
             slider.setMinimumTrackImage(UIImage(named: "sliderImage")!, for: .normal)
             slider.setThumbImage(UIImage(named: "tumbImage")!, for: .normal)
@@ -56,6 +60,20 @@ class CreateGameViewController: BaseViewController<CreateGamePresenterProtocol>,
     override func viewDidAppear(_ animated: Bool) {
         tipCountLabel.text = Defaults.tips?.description
         cointCoinLabel.text = Defaults.coins?.description
+    }
+    
+    func setAtributedTitle(_ str: String) -> NSAttributedString {
+        let attributes: [NSAttributedString.Key: Any] = [
+            NSAttributedString.Key.strokeColor: UIColor(red: 0, green: 126/255, blue: 109/255, alpha: 1),
+            NSAttributedString.Key.foregroundColor: UIColor.white,
+            NSAttributedString.Key.strokeWidth: -2.0,
+            NSAttributedString.Key.font : UIFont.systemFont(ofSize: 17, weight: .heavy/*, width: .expanded*/)
+        ]
+        let textWithStroke = NSAttributedString(
+            string: str,
+            attributes: attributes
+        );
+        return textWithStroke
     }
     
     //MARK: - @objc Methods

@@ -99,7 +99,7 @@ extension GameScene : ButtonResponder {
         case .enterButton :
             gameManager.moveAllWorldSpriteBack()
         case .tip:
-            if !gameManager.isTipWasShown && Defaults.tips! >= 0 {
+            if !gameManager.isTipWasShown && Defaults.tips! > 0 {
             Defaults.tips! -= 1
                 gameManager.isTipWasShown = true
                 gameManager.showTip()

@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "Векторний смарт-об’єкт 19.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "Векторний смарт-об’єкт 19@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "Векторний смарт-об’єкт 19@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

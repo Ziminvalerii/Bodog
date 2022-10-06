@@ -7,6 +7,16 @@
 
 import AVFoundation
 
+var isSilent: Bool = UserDefaults.standard.bool(forKey: "isSilent") {
+    didSet {
+        if isSilent {
+            player?.pause()
+        } else {
+            player?.play()
+        }
+    }
+}
+
 var player: AVAudioPlayer?
 
 func playBackgroundMusic() {

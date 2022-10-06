@@ -60,6 +60,7 @@
 		9FA4D7FB28E1BAE90033967E /* connectGame.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FA4D7F928E1BAE80033967E /* connectGame.json */; };
 		9FA4D7FC28E1BAE90033967E /* createGame.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FA4D7FA28E1BAE90033967E /* createGame.json */; };
 		9FA4D7FE28E1BB1C0033967E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FA4D7FD28E1BB1C0033967E /* Main.storyboard */; };
+		9FBB936428EDBA2700718DC8 /* RightAlignedIconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBB936328EDBA2700718DC8 /* RightAlignedIconButton.swift */; };
 		9FCDC6C928D910AE0013FBF3 /* AdsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCDC6C828D910AE0013FBF3 /* AdsManager.swift */; };
 		9FCDC6CB28D91D580013FBF3 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCDC6CA28D91D580013FBF3 /* UIApplication.swift */; };
 		9FD414C028D475B6001BC81D /* success.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9FD414BF28D475B6001BC81D /* success.mp3 */; };
@@ -68,6 +69,8 @@
 		9FD414CA28D48884001BC81D /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD414C928D48884001BC81D /* ShopViewController.swift */; };
 		9FD414CC28D48893001BC81D /* ShopPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD414CB28D48893001BC81D /* ShopPresenter.swift */; };
 		9FDC6AA528D36A3F0062677B /* TimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDC6AA428D36A3F0062677B /* TimerManager.swift */; };
+		9FE93FB528EDBF81009E367F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE93FB428EDBF81009E367F /* SettingsViewController.swift */; };
+		9FE93FB728EDC07F009E367F /* SettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE93FB628EDC07F009E367F /* SettingsPresenter.swift */; };
 		9FE97A6228DCEA210098314E /* RateScreenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FE97A6128DCEA210098314E /* RateScreenView.xib */; };
 		9FE97A6428DCF4630098314E /* RateScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE97A6328DCF4630098314E /* RateScreenView.swift */; };
 		9FE97A6628DD9DFD0098314E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE97A6528DD9DFD0098314E /* Constants.swift */; };
@@ -171,6 +174,7 @@
 		9FA4D7F928E1BAE80033967E /* connectGame.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = connectGame.json; sourceTree = "<group>"; };
 		9FA4D7FA28E1BAE90033967E /* createGame.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = createGame.json; sourceTree = "<group>"; };
 		9FA4D7FD28E1BB1C0033967E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		9FBB936328EDBA2700718DC8 /* RightAlignedIconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightAlignedIconButton.swift; sourceTree = "<group>"; };
 		9FCDC6C828D910AE0013FBF3 /* AdsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsManager.swift; sourceTree = "<group>"; };
 		9FCDC6CA28D91D580013FBF3 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		9FD414BF28D475B6001BC81D /* success.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = success.mp3; sourceTree = "<group>"; };
@@ -179,6 +183,8 @@
 		9FD414C928D48884001BC81D /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
 		9FD414CB28D48893001BC81D /* ShopPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopPresenter.swift; sourceTree = "<group>"; };
 		9FDC6AA428D36A3F0062677B /* TimerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerManager.swift; sourceTree = "<group>"; };
+		9FE93FB428EDBF81009E367F /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		9FE93FB628EDC07F009E367F /* SettingsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresenter.swift; sourceTree = "<group>"; };
 		9FE97A6128DCEA210098314E /* RateScreenView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RateScreenView.xib; sourceTree = "<group>"; };
 		9FE97A6328DCF4630098314E /* RateScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateScreenView.swift; sourceTree = "<group>"; };
 		9FE97A6528DD9DFD0098314E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -418,6 +424,7 @@
 				9FECFC0E28D48C9200D46D9D /* Extensions */,
 				9F02462B28D28A3D0085EDAB /* TabBarViewController.swift */,
 				9F02462E28D3009A0085EDAB /* Builder.swift */,
+				9FBB936328EDBA2700718DC8 /* RightAlignedIconButton.swift */,
 				9F02463028D300A50085EDAB /* Router.swift */,
 				9F02463228D304CB0085EDAB /* BaseViewController.swift */,
 			);
@@ -427,6 +434,7 @@
 		9F02463428D307410085EDAB /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				9FE93FB128EDBF2E009E367F /* Settings Screen */,
 				9FA4D7E928E19FFA0033967E /* Instruction Screen */,
 				9FD414C428D4884E001BC81D /* Shop Screen */,
 				9F0A58D728D32853006758AC /* Avatar Screen */,
@@ -605,6 +613,31 @@
 			children = (
 				9FD414C728D48873001BC81D /* BuyCollectionViewCell.swift */,
 				9FD414C928D48884001BC81D /* ShopViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9FE93FB128EDBF2E009E367F /* Settings Screen */ = {
+			isa = PBXGroup;
+			children = (
+				9FE93FB328EDBF57009E367F /* View */,
+				9FE93FB228EDBF55009E367F /* Model */,
+			);
+			path = "Settings Screen";
+			sourceTree = "<group>";
+		};
+		9FE93FB228EDBF55009E367F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9FE93FB628EDC07F009E367F /* SettingsPresenter.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9FE93FB328EDBF57009E367F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9FE93FB428EDBF81009E367F /* SettingsViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -977,6 +1010,7 @@
 				9FA4D7EF28E1AFB80033967E /* InstructionPresenter.swift in Sources */,
 				9FECFC2628D852DE00D46D9D /* RateHeaderView.swift in Sources */,
 				9FE97A6828DDA3EC0098314E /* Int.swift in Sources */,
+				9FE93FB528EDBF81009E367F /* SettingsViewController.swift in Sources */,
 				9F0245C528D0D7210085EDAB /* EmptyNode.swift in Sources */,
 				9F02461C28D20E3F0085EDAB /* ButtonNode.swift in Sources */,
 				9F02462228D228EE0085EDAB /* EnterScene.swift in Sources */,
@@ -984,6 +1018,7 @@
 				9FECFC1D28D50C4900D46D9D /* ScoreTableViewCell.swift in Sources */,
 				9F02463C28D307A60085EDAB /* HomeViewController.swift in Sources */,
 				9F02461328D204150085EDAB /* PlayingState.swift in Sources */,
+				9FE93FB728EDC07F009E367F /* SettingsPresenter.swift in Sources */,
 				9F0A58DF28D328BF006758AC /* AvatarPresenter.swift in Sources */,
 				9F02461A28D205D20085EDAB /* Updatable.swift in Sources */,
 				9F1E184028D9D38E000777C7 /* PeerConectionManager.swift in Sources */,
@@ -1026,6 +1061,7 @@
 				9FECFC2128D84BA000D46D9D /* ReteModel.swift in Sources */,
 				9F02463E28D307AF0085EDAB /* HomePresenter.swift in Sources */,
 				9F02462F28D3009A0085EDAB /* Builder.swift in Sources */,
+				9FBB936428EDBA2700718DC8 /* RightAlignedIconButton.swift in Sources */,
 				9F0A58DD28D328AE006758AC /* AvatarCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

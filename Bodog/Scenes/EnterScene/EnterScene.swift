@@ -31,7 +31,7 @@ class EnterScene: SKScene {
         paragraphStyle.alignment = .center
         let range = NSRange(location: 0, length: str.count)
         attrString.addAttribute(.paragraphStyle, value: paragraphStyle, range: range)
-        attrString.addAttributes([.foregroundColor : UIColor.white, .font : UIFont(name: "Arial", size: 48.0)!], range: range)
+        attrString.addAttributes([.foregroundColor : UIColor.white, .font : UIFont(name: "Copperplate Bold", size: 48.0)!], range: range)
         return attrString
     }
     
@@ -42,7 +42,7 @@ class EnterScene: SKScene {
         paragraphStyle.alignment = .center
         let range = NSRange(location: 0, length: str.count)
         attrString.addAttribute(.paragraphStyle, value: paragraphStyle, range: range)
-        attrString.addAttributes([.foregroundColor : UIColor.black, .font : UIFont.systemFont(ofSize: 36 )], range: range)
+        attrString.addAttributes([.foregroundColor : UIColor.black, .font : UIFont(name: "Copperplate Bold", size: 32)], range: range)
         return attrString
     }
 

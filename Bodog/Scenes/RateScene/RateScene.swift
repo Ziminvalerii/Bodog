@@ -41,10 +41,10 @@ class RateScene: SKScene {
                 showBackButton()
             }
             hideSecondsPlayer()
-            rateScreenView.frame = CGRect(x: 10, y: view.frame.midY/2 , width: view.bounds.width - 20, height: view.bounds.size.height - view.frame.midY/2 - 24)
+            rateScreenView.frame = CGRect(x: 0, y: view.frame.midY/2 , width: view.bounds.width /*- 20*/, height: 500)
             self.scene?.view?.addSubview(rateScreenView)
             secondPlayerScrore = (parentVC as? GameViewController)?.presenter.secondPlayerScore
-            player1View = PlayerView(frame: CGRect(x: 16, y: view.frame.midY/2 - 16*3, width: view.bounds.size.width/2 - 24, height: 40))
+            player1View = PlayerView(frame: CGRect(x: 40, y: view.frame.midY/2 - 16*3, width: view.bounds.size.width/2 - 24, height: 40))
             player1View!.configure(plyerName: Defaults.userName, imageName: "person\(Defaults.imageIndex)")
             player2View = PlayerView(frame: CGRect(x: (view.bounds.size.width/2 - 24) + 16 + 14, y: view.frame.midY/2 - 16*3, width:view.bounds.size.width/2 - 24, height: 40))
             if let userInfo = (parentVC as? GameViewController)?.presenter.userInfo {

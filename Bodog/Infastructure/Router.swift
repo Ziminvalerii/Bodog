@@ -19,12 +19,11 @@ protocol RouterProtocol {
     func dismissCurrentVC(_ vc: UIViewController)
     func presentShopVC(from vc: UIViewController, shop:ShopCases)
     func presentInstruction(from vc: UIViewController)
-
+    func presentSettingsVC(from vc: UIViewController)
 }
 
 class Router : RouterProtocol {
-    
-    
+   
     //MARK: - Properties
     var builder: BuilderProtocol
     
@@ -38,6 +37,12 @@ class Router : RouterProtocol {
         return builder.createTabBar(router: self)
     }
    
+    func presentSettingsVC(from vc: UIViewController) {
+        let goToVC = builder.createSettingsViewController(self)
+        goToVC.modalTransitionStyle = .crossDissolve
+        goToVC.modalPresentationStyle = .fullScreen
+        vc.present(goToVC, animated: true)
+    }
     
     func setUpTabBarVC() -> [UIViewController] {
         let connectionManager = PeerContectionManager()
