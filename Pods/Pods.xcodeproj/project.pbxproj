@@ -3207,7 +3207,7 @@
 			baseConfigurationReference = 11C0F8A5E7BEA40BF67EF935A1BE9857 /* SwiftMessages.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 52T9XM28CG;
@@ -3449,7 +3449,7 @@
 			baseConfigurationReference = 4870751BA64FE526E5FA92D5BE3DF609 /* SwiftMessages.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 52T9XM28CG;
