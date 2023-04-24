@@ -3540,6 +3540,7 @@
 			baseConfigurationReference = 4870751BA64FE526E5FA92D5BE3DF609 /* SwiftMessages.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SwiftMessages";
 				DEVELOPMENT_TEAM = "";
@@ -3654,6 +3655,7 @@
 			baseConfigurationReference = 11C0F8A5E7BEA40BF67EF935A1BE9857 /* SwiftMessages.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SwiftMessages";
 				DEVELOPMENT_TEAM = "";
