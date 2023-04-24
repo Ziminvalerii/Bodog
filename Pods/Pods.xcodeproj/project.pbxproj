@@ -3542,7 +3542,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SwiftMessages";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 52T9XM28CG;
 				IBSC_MODULE = SwiftMessages;
 				INFOPLIST_FILE = "Target Support Files/SwiftMessages/ResourceBundle-SwiftMessages-SwiftMessages-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -3654,7 +3654,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SwiftMessages";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 52T9XM28CG;
 				IBSC_MODULE = SwiftMessages;
 				INFOPLIST_FILE = "Target Support Files/SwiftMessages/ResourceBundle-SwiftMessages-SwiftMessages-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
