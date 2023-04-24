@@ -9,7 +9,7 @@
 	<key>provisioningProfiles</key>
 	<dict>
 		<key>com.donna.bodog</key>
-		<string>bodogProvisioningProfile</string>
+		<string>curranProvisioningProfile</string>
 	</dict>
 </dict>
 </plist>

@@ -3,7 +3,7 @@ set -eo pipefail
 
 mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
 
-cp ./.github/secrets/bodogProvisioningProfile.mobileprovision ~/Library/MobileDevice/Provisioning\ Profiles/bodogProvisioningProfile.mobileprovision
+cp ./.github/secrets/curranProvisioningProfile.mobileprovision ~/Library/MobileDevice/Provisioning\ Profiles/curranProvisioningProfile.mobileprovision
 
 
 security create-keychain -p "" build.keychain
