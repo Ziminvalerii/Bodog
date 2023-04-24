@@ -2,9 +2,9 @@
 
 set -eo pipefail
 
-xcodebuild -workspace "$NAME".xcworkspace \
-            -scheme "$NAME" \
-            -sdk iphoneos \
-            -configuration AppStoreDistribution \
-            -archivePath $PWD/build/"$NAME".xcarchive \
-            clean archive | xcpretty
+    if [ -e "./$NAME.xcworkspace" ]
+then
+    xcodebuild archive -workspace "$NAME".xcworkspace -scheme "$NAME" -destination 'generic/platform=iOS' -archivePath build/"$NAME".xcarchive
+else
+    xcodebuild archive -project "$NAME".xcodeproj -scheme "$NAME" -destination 'generic/platform=iOS' -archivePath build/"$NAME".xcarchive
+fi

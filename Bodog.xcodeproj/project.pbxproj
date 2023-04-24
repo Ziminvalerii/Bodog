@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		1B9EECF64032B22FCDF433C1 /* Pods_BodogTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 778EFE2E32A9B4B2EB91DFBF /* Pods_BodogTests.framework */; };
 		2B7E82C16750C52295832E03 /* Pods_Bodog_BodogUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 129216D5CC3D2656DB3EA5FA /* Pods_Bodog_BodogUITests.framework */; };
+		6765F0EF29F6A3BB0077B4BC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6765F0EE29F6A3BB0077B4BC /* GoogleService-Info.plist */; };
+		6765F0F329F6A7400077B4BC /* Analytics in Frameworks */ = {isa = PBXBuildFile; productRef = 6765F0F229F6A7400077B4BC /* Analytics */; };
+		67C1483029E43E6700BFC6E5 /* LoaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C1482F29E43E6700BFC6E5 /* LoaderViewController.swift */; };
 		9F02459028D0A8E40085EDAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F02458F28D0A8E40085EDAB /* AppDelegate.swift */; };
 		9F02459228D0A8E40085EDAB /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9F02459128D0A8E40085EDAB /* GameScene.sks */; };
 		9F02459428D0A8E40085EDAB /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9F02459328D0A8E40085EDAB /* Actions.sks */; };
@@ -116,6 +119,9 @@
 		2967C391FDD9FAD639940D68 /* Pods-Bodog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bodog.debug.xcconfig"; path = "Target Support Files/Pods-Bodog/Pods-Bodog.debug.xcconfig"; sourceTree = "<group>"; };
 		58F374330BEED858EEA87EFE /* Pods_Bodog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bodog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B91BA53428387B77DEC81D7 /* Pods-Bodog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bodog.release.xcconfig"; path = "Target Support Files/Pods-Bodog/Pods-Bodog.release.xcconfig"; sourceTree = "<group>"; };
+		6765F0EE29F6A3BB0077B4BC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6765F0F029F6A5080077B4BC /* Bodog.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Bodog.entitlements; sourceTree = "<group>"; };
+		67C1482F29E43E6700BFC6E5 /* LoaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderViewController.swift; sourceTree = "<group>"; };
 		6DDD0CFB82B7F533BED6109D /* Pods-Bodog-BodogUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bodog-BodogUITests.release.xcconfig"; path = "Target Support Files/Pods-Bodog-BodogUITests/Pods-Bodog-BodogUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7640843D81F0E9FCFECF98FE /* Pods-BodogTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BodogTests.release.xcconfig"; path = "Target Support Files/Pods-BodogTests/Pods-BodogTests.release.xcconfig"; sourceTree = "<group>"; };
 		778EFE2E32A9B4B2EB91DFBF /* Pods_BodogTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BodogTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -215,6 +221,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6765F0F329F6A7400077B4BC /* Analytics in Frameworks */,
 				AEBB48B0EE81F5C1A3F12B57 /* Pods_Bodog.framework in Frameworks */,
 				9F1EF45028DDED4B00747E0B /* StoreKit.framework in Frameworks */,
 			);
@@ -277,7 +284,9 @@
 		9F02458E28D0A8E40085EDAB /* Bodog */ = {
 			isa = PBXGroup;
 			children = (
+				6765F0F029F6A5080077B4BC /* Bodog.entitlements */,
 				9FEB74D628D999F300E30380 /* Info.plist */,
+				6765F0EE29F6A3BB0077B4BC /* GoogleService-Info.plist */,
 				9F02458F28D0A8E40085EDAB /* AppDelegate.swift */,
 				9F02459328D0A8E40085EDAB /* Actions.sks */,
 				9F02462A28D289CC0085EDAB /* Scenes */,
@@ -441,6 +450,7 @@
 				9F02463628D307510085EDAB /* Create Game Screen */,
 				9F02463528D3074E0085EDAB /* Home Screen */,
 				9F02464328D30A2A0085EDAB /* Game Screen */,
+				67C1482F29E43E6700BFC6E5 /* LoaderViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -767,6 +777,9 @@
 			dependencies = (
 			);
 			name = Bodog;
+			packageProductDependencies = (
+				6765F0F229F6A7400077B4BC /* Analytics */,
+			);
 			productName = Bodog;
 			productReference = 9F02458C28D0A8E40085EDAB /* Bodog.app */;
 			productType = "com.apple.product-type.application";
@@ -842,6 +855,9 @@
 				Base,
 			);
 			mainGroup = 9F02458328D0A8E40085EDAB;
+			packageReferences = (
+				6765F0F129F6A7400077B4BC /* XCRemoteSwiftPackageReference "Analytics" */,
+			);
 			productRefGroup = 9F02458D28D0A8E40085EDAB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -875,6 +891,7 @@
 				9FD414C228D4768E001BC81D /* erorr.mp3 in Resources */,
 				9F02459428D0A8E40085EDAB /* Actions.sks in Resources */,
 				9FECFC1828D5056400D46D9D /* Rate.sks in Resources */,
+				6765F0EF29F6A3BB0077B4BC /* GoogleService-Info.plist in Resources */,
 				9F0245C828D1EFB30085EDAB /* backgroundMusic.wav in Resources */,
 				9FECFC2D28D89D7700D46D9D /* PlayerView.xib in Resources */,
 				9FA4D7FE28E1BB1C0033967E /* Main.storyboard in Resources */,
@@ -1040,6 +1057,7 @@
 				9FA4D7E828E089710033967E /* ViewAnimationTransition.swift in Sources */,
 				9F02462528D245980085EDAB /* Scenes.swift in Sources */,
 				9FD414CA28D48884001BC81D /* ShopViewController.swift in Sources */,
+				67C1483029E43E6700BFC6E5 /* LoaderViewController.swift in Sources */,
 				9FD414CC28D48893001BC81D /* ShopPresenter.swift in Sources */,
 				9F02464028D308C40085EDAB /* CreateGameViewController.swift in Sources */,
 				9F02461628D205340085EDAB /* GameSceneProtocol.swift in Sources */,
@@ -1230,15 +1248,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_ENTITLEMENTS = Bodog/Bodog.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 4;
-				DEVELOPMENT_TEAM = 52T9XM28CG;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 52T9XM28CG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Bodog/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "BoDog Challenge";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
@@ -1249,10 +1271,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.01;
 				PRODUCT_BUNDLE_IDENTIFIER = com.donna.bodog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = bodogProvisioningProfile;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = curranProvisioningProfile;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1265,15 +1288,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_ENTITLEMENTS = Bodog/Bodog.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 4;
-				DEVELOPMENT_TEAM = 52T9XM28CG;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 52T9XM28CG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Bodog/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "BoDog Challenge";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
@@ -1284,10 +1311,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.01;
 				PRODUCT_BUNDLE_IDENTIFIER = com.donna.bodog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = bodogProvisioningProfile;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = curranProvisioningProfile;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1414,6 +1442,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6765F0F129F6A7400077B4BC /* XCRemoteSwiftPackageReference "Analytics" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ararirarayrare/Analytics.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6765F0F229F6A7400077B4BC /* Analytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6765F0F129F6A7400077B4BC /* XCRemoteSwiftPackageReference "Analytics" */;
+			productName = Analytics;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9F02458428D0A8E40085EDAB /* Project object */;
 }

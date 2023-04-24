@@ -2,7 +2,7 @@
 
 set -eo pipefail
 
-xcodebuild -archivePath $PWD/build/"$NAME".xcarchive \
+xcodebuild -archivePath build/"$NAME".xcarchive \
             -exportOptionsPlist .github/exportOptions.plist \
             -exportPath $PWD/build \
             -allowProvisioningUpdates \

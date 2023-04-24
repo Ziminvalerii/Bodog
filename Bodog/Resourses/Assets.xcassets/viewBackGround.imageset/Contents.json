@@ -1,19 +1,8 @@
 {
   "images" : [
     {
-      "filename" : "Векторний смарт-об’єкт 18.png",
-      "idiom" : "universal",
-      "scale" : "1x"
-    },
-    {
-      "filename" : "Векторний смарт-об’єкт 18@2x.png",
-      "idiom" : "universal",
-      "scale" : "2x"
-    },
-    {
-      "filename" : "Векторний смарт-об’єкт 18@3x.png",
-      "idiom" : "universal",
-      "scale" : "3x"
+      "filename" : "Векторний смарт-об’єкт 18@3x 1.png",
+      "idiom" : "universal"
     }
   ],
   "info" : {
