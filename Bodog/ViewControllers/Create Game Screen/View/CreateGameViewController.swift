@@ -46,7 +46,7 @@ class CreateGameViewController: BaseViewController<CreateGamePresenterProtocol>,
             slider.layer.masksToBounds = true
             slider.setMaximumTrackImage(UIImage(named: "sliderImage")!, for: .normal)
             slider.setMinimumTrackImage(UIImage(named: "sliderImage")!, for: .normal)
-            slider.setThumbImage(UIImage(named: "tumbImage")!, for: .normal)
+            slider.setThumbImage(UIImage(named: "tumbbImage")!, for: .normal)
         }
     }
     
