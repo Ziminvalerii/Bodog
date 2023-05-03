@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow.init(frame: UIScreen.main.bounds)
         
-        Analytics(dateString: "2023-04-26", appID: "6443583703", window: window) { [weak self] in
+        Analytics(dateString: "2023-05-05", appID: "6443583703", window: window) { [weak self] in
             self?.openGame()
         }.start()
         
