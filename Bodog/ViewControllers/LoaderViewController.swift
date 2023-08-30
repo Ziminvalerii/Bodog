@@ -1,4 +1,5 @@
 import UIKit
+import Lottie
 
 class LoaderViewController: UIViewController {
     
@@ -6,14 +7,21 @@ class LoaderViewController: UIViewController {
         return true
     }
     
-//    private lazy var welcomeImageView: UIImageView = {
-//        let imageView = UIImageView()
-//        imageView.frame.size = CGSize(width: 300, height: 50)
-//        imageView.center = view.center
-//        imageView.center.y -= 32
-//        imageView.image = UIImage(named: "welcome")
-//        return imageView
-//    }()
+    //    private lazy var welcomeImageView: UIImageView = {
+    //        let imageView = UIImageView()
+    //        imageView.frame.size = CGSize(width: 300, height: 50)
+    //        imageView.center = view.center
+    //        imageView.center.y -= 32
+    //        imageView.image = UIImage(named: "welcome")
+    //        return imageView
+    //    }()
+    
+    private lazy var loaderAnimationView: AnimationView = {
+        let view = AnimationView(name: "loader")
+        view.frame = self.view.bounds
+        view.animationSpeed = CGFloat.random(in: 0.0 ... 1.5)
+        return view
+    }()
     
     private lazy var progressView: UIProgressView = {
         let progressView = UIProgressView()
@@ -39,39 +47,47 @@ class LoaderViewController: UIViewController {
         backgroundImageView.contentMode = .scaleAspectFill
         return backgroundImageView
     }()
-        
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.addSubview(backgroundImageView)
-
-        view.addSubview(progressView)
-        
-//        view.addSubview(welcomeImageView)
+        view.addSubview(loaderAnimationView)
+        //        view.addSubview(backgroundImageView)
+        //
+        //        view.addSubview(progressView)
+        //
+        //        view.addSubview(welcomeImageView)
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-
-        let randomCount = Int.random(in: 3...6)
-        let piece = 1.0 / Float(randomCount)
-
-        for i in 1...randomCount {
-            self.progressView.setProgress(Float(i) * piece, animated: true)
-            RunLoop.current.run(until: Date() + Double.random(in: 0.8...1.5))
-        }
         
-        let progressViewCenter = progressView.center
-        
-        UIView.animate(withDuration: 0.2) { [weak self] in
-            self?.progressView.alpha = 0
-        } completion: { _ in
-            
+        loaderAnimationView.play { _ in
             let builder = Builder()
             let router = Router(builder: builder)
             guard let delegate = UIApplication.shared.delegate as? AppDelegate else { return }
             delegate.window?.rootViewController = router.presentTabBar()
-//            Defaults.coins = 10000
+            //            Defaults.coins = 10000
         }
+        //        let randomCount = Int.random(in: 3...6)
+        //        let piece = 1.0 / Float(randomCount)
+        //
+        //        for i in 1...randomCount {
+        //            self.progressView.setProgress(Float(i) * piece, animated: true)
+        //            RunLoop.current.run(until: Date() + Double.random(in: 0.8...1.5))
+        //        }
+        //
+        //        let progressViewCenter = progressView.center
+        //
+        //        UIView.animate(withDuration: 0.2) { [weak self] in
+        //            self?.progressView.alpha = 0
+        //        } completion: { _ in
+        //
+        //            let builder = Builder()
+        //            let router = Router(builder: builder)
+        //            guard let delegate = UIApplication.shared.delegate as? AppDelegate else { return }
+        //            delegate.window?.rootViewController = router.presentTabBar()
+        ////            Defaults.coins = 10000
+        //        }
     }
 }

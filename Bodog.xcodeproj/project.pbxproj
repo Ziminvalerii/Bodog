@@ -72,6 +72,7 @@
 		9FD414CA28D48884001BC81D /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD414C928D48884001BC81D /* ShopViewController.swift */; };
 		9FD414CC28D48893001BC81D /* ShopPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD414CB28D48893001BC81D /* ShopPresenter.swift */; };
 		9FDC6AA528D36A3F0062677B /* TimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDC6AA428D36A3F0062677B /* TimerManager.swift */; };
+		9FDC73A62A93A6ED0093E6BF /* loader.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FDC73A52A93A6EC0093E6BF /* loader.json */; };
 		9FE93FB528EDBF81009E367F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE93FB428EDBF81009E367F /* SettingsViewController.swift */; };
 		9FE93FB728EDC07F009E367F /* SettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE93FB628EDC07F009E367F /* SettingsPresenter.swift */; };
 		9FE97A6228DCEA210098314E /* RateScreenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FE97A6128DCEA210098314E /* RateScreenView.xib */; };
@@ -189,6 +190,7 @@
 		9FD414C928D48884001BC81D /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
 		9FD414CB28D48893001BC81D /* ShopPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopPresenter.swift; sourceTree = "<group>"; };
 		9FDC6AA428D36A3F0062677B /* TimerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerManager.swift; sourceTree = "<group>"; };
+		9FDC73A52A93A6EC0093E6BF /* loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loader.json; sourceTree = "<group>"; };
 		9FE93FB428EDBF81009E367F /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		9FE93FB628EDC07F009E367F /* SettingsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresenter.swift; sourceTree = "<group>"; };
 		9FE97A6128DCEA210098314E /* RateScreenView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RateScreenView.xib; sourceTree = "<group>"; };
@@ -596,6 +598,7 @@
 			children = (
 				9FA4D7F928E1BAE80033967E /* connectGame.json */,
 				9FA4D7FA28E1BAE90033967E /* createGame.json */,
+				9FDC73A52A93A6EC0093E6BF /* loader.json */,
 				9FA4D7F128E1B2080033967E /* gameStarted.json */,
 			);
 			path = LottieAnimation;
@@ -876,6 +879,7 @@
 			files = (
 				9FA4D7FC28E1BAE90033967E /* createGame.json in Resources */,
 				9FD414C028D475B6001BC81D /* success.mp3 in Resources */,
+				9FDC73A62A93A6ED0093E6BF /* loader.json in Resources */,
 				9F02462028D227670085EDAB /* EnterScene.sks in Resources */,
 				9FECFC2828D852F800D46D9D /* RateHeaderView.xib in Resources */,
 				9FA4D7F228E1B2080033967E /* gameStarted.json in Resources */,
@@ -1252,12 +1256,12 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 52T9XM28CG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Bodog/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "BoDog Challenge";
+				INFOPLIST_KEY_CFBundleDisplayName = "Play With Ojo!";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -1271,7 +1275,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.01;
+				MARKETING_VERSION = 1.02;
 				PRODUCT_BUNDLE_IDENTIFIER = com.donna.bodog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1292,12 +1296,12 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 52T9XM28CG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Bodog/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "BoDog Challenge";
+				INFOPLIST_KEY_CFBundleDisplayName = "Play With Ojo!";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -1311,7 +1315,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.01;
+				MARKETING_VERSION = 1.02;
 				PRODUCT_BUNDLE_IDENTIFIER = com.donna.bodog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
